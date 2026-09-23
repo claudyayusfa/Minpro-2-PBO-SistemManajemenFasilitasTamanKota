@@ -1,5 +1,9 @@
 # Sistem Manajemen Fasilitas Taman Kota ˚˖𓍢ִִ໋🌼🧺˚˖𓍢ִ🌿˚.
 
+- Nama      : Claudya Yusfa Ariyani
+- NIM       : 2509116043
+- Kelas     : B2025
+
 ## 1. Deskripsi Program
 
 **Sistem Manajemen Fasilitas Taman Kota** adalah program berbasis Java yang digunakan untuk mengelola data fasilitas pada taman kota. Program ini merupakan pengembangan dari Mini Project 1 dengan menerapkan konsep Pemrograman Berorientasi Objek (PBO). 
