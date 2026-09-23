@@ -47,6 +47,6 @@ Alur dari setiap menu adalah:
 5. **Keluar dari Program**
    Program berhenti dan menampilkan pesan bahwa program telah selesai.
 
-## 4. Dokumentasi Running Program
+## 4. Dokumentasi Running Program ⚡︎
 
 ### 4.1 Menu Utama
