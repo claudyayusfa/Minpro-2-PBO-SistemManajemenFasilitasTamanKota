@@ -24,7 +24,7 @@ public class InputHelper {
             System.out.print(pesan);
             
             try {
-                int angka = Integer.parseInt(input.nextLine());
+                int angka = Integer.parseInt(input.nextLine().trim());
                 
                 if (angka >= 0) {
                     return angka;

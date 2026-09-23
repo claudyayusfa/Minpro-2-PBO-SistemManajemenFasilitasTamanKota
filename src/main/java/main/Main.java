@@ -1,49 +1,42 @@
 
 package main;
 
-import manager.FasilitasManager;
-import helper.InputHelper;
+import controller.FasilitasController;
+import view.FasilitasView;
 
 public class Main {
 
     public static void main(String[] args) {
         
-        FasilitasManager manager = new FasilitasManager();
-        
+        FasilitasView view = new FasilitasView();
+        FasilitasController controller = new FasilitasController(view);
+
         int pilihan;
-        
         do {
-            System.out.println("\n--------------------------------------");
-            System.out.println("SISTEM MANAJEMEN FASILITAS TAMAN KOTA");
-            System.out.println("--------------------------------------");
-            System.out.println("1. Tampilkan Fasilitas");
-            System.out.println("2. Tambah Fasilitas");
-            System.out.println("3. Hapus Fasilitas");
-            System.out.println("4. Update Fasilitas");
-            System.out.println("5. Keluar dari Program");
-            System.out.println("--------------------------------------");
+            view.tampilkanJudul();
+            view.tampilkanMenu();
             
-            pilihan = InputHelper.inputInteger("Pilih Menu (1-5): ");
+            pilihan = view.pilihMenu();
             
             switch (pilihan) {
                 case 1:
-                    manager.tampilkanFasilitas();
+                    controller.tampilkanFasilitas();
                     break;
                 case 2:
-                    manager.tambahFasilitas();
+                    controller.tambahFasilitas();
                     break;
                 case 3:
-                    manager.hapusFasilitas();
+                    controller.hapusFasilitas();
                     break;
                 case 4:
-                    manager.updateFasilitas();
+                    controller.updateFasilitas();
                     break;
                 case 5:
-                    System.out.println("Program selesai. Terima kasih sudah menggunakan!");
+                    view.tampilkanPesan("Program selesai. Terima kasih sudah menggunakan!");
                     break;
                     
                 default:
-                    System.out.println("Pilihan tidak valid!");
+                    view.tampilkanPesan("Pilihan tidak valid!");
             }
         } while (pilihan != 5);
     }
