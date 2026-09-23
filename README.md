@@ -1,79 +1,44 @@
-# Sistem Manajemen Fasilitas Taman Kota🌳🛝🌻
+# Sistem Manajemen Fasilitas Taman Kota 🌳💟
 
-## Deskripsi Singkat
-Sistem Manajemen Fasilitas Taman Kota adalah program yang berbasis Java. Program ini digunakan untuk mengelola data fasilitas yang terdapat pada taman kota. Program ini menerapkan konsep Pemrograman Berorientasi Objek (PBO) dan memiliki fitur CRUD (Create, Read, Update, dan Delete) untuk menambah, menampilkan mengubah, dan menghapus data fasilitas.
+## 1. Deskripsi Program
 
-## Fitur Program
-- Menampilkan data fasilitas,
-- Menambah data fasilitas,
-- Menghapus data fasilitas,
-- Mengupdate (memperbarui) data fasilitas,
-- Validasi input,
-- Menu interaktif.
+**Sistem Manajemen Fasilitas Taman Kota** adalah program berbasis Java yang digunakan untuk mengelola data fasilitas pada taman kota. Program ini merupakan pengembangan dari Mini Project 1 dengan menerapkan konsep Pemrograman Berorientasi Objek (PBO). 
 
-## Data Fasilitas
-Data fasilitas yang dikelola adalah:
-- ID fasilitas
-  (Contoh: 1, 2, 3, dan seterusnya),
-- Nama fasilitas
-  (Contoh: Bangku Taman, Tempat Sampah, Lampu Taman),
-- Jenis fasilitas
-  (Contoh: Tempat Duduk, Kebersihan, Penerangan),
-- Kondisi fasilitas
-  (Contoh: Baik, Cukup, Rusak),
-- Jumlah fasilitas
-  (Contoh: 15, 10, 2).
+Program menyediakan fitur **CRUD (Create, Read, Update, Delete)** untuk menampilkan, menambahkan, memperbarui, dan menghapus data fasilitas yang berada di taman kota.
 
-## Alur Program
-**1. Program dijalankan melalui class 'Main'.**
+Fasilitas pada program dibagi menjadi dua jenis, yaitu:
+- **Fasilitas Umum** seperti gazebo, tempat duduk, tempat sampah, dan fasilitas umum lainnya.
+- **Fasilitas Olahraga** seperti lapangan basket, lapangan voli, dan fasilitas olahraga lainnya.
 
-<img width="738" height="396" alt="image" src="https://github.com/user-attachments/assets/1e44a2dd-cced-4554-b058-fa3df6c34d85" />
+## 2. Struktur Program
+Program dibagi menjadi beberapa package sebagai berikut:
 
+<img width="738" height="542" alt="image" src="https://github.com/user-attachments/assets/77361da6-99c8-419d-907e-4a3b24ac1eeb" />
 
-**2. Program menampilkan menu utama Sistem Manajemen Fasilitas Taman Kota dan pengguna memilih menu menggunakan input angka.**
+Penjelasan masing-masing package, yaitu:
+- **`models`** berisi class yang mewakili data fasilitas yaitu `Fasilitas`, `FasilitasUmum`, dan `FasilitasOlahraga`.
+- **`view`** berisi `FasilitasView` yang menangani tampilan program dan input dari pengguna.
+- **`controller`** berisi `FasilitasController` yang menangani proses CRUD dan pengelolaan data fasilitas.
+- **`helper`** berisi `InputHelper` yang membantu proses input dan validasi input.
+- **`main`** berisi `Main` sebagai entry point untuk menjalankan program.
 
-<img width="554" height="348" alt="image" src="https://github.com/user-attachments/assets/f48c32bd-90aa-442e-99bc-d7491f8ca88d" />
+## 3. Penjelasan Alur Program
 
+Ketika program dijalankan, class 'Main' membuat objek `FasilitasView` dan `FasilitasController`. Pada saat `FasilitasController` dibuat, program secara otomatis memasukkan dummy data ke dalam `ArrayList`.
 
-**3. Jika Pengguna memilih menu 1 yaitu Tampilkan Fasilitas, program akan menampilkan seluruh data fasilitas yang tersimpan.**
+Setelah itu, program menampilkan menu utama:
 
-<img width="564" height="1136" alt="image" src="https://github.com/user-attachments/assets/559c804a-d21c-40ed-95f9-0661ec43b824" />
+<img width="564" height="352" alt="image" src="https://github.com/user-attachments/assets/b5e61d53-dc20-44c4-a5e0-b53dc16ea8b5" />
 
+Alur dari setiap menu adalah:
 
-**4. Jika Pengguna memilih menu 2 yaitu Tambah Fasilitas, Pengguna memasukkan ID, nama, jenis, kondisi, dan jumlah fasilitas. Data kemudian disimpan ke dalam 'ArrayList'.**
-
-<img width="472" height="346" alt="image" src="https://github.com/user-attachments/assets/cc08c44c-e883-4aff-bbcb-e36102619623" />
-
-<img width="406" height="178" alt="image" src="https://github.com/user-attachments/assets/43161bce-a3fd-4411-ae18-9ddd80712b0a" />
-
-
-**5. Jika Pengguna memilih menu 3 yaitu Hapus Fasilitas, Pengguna memasukkan ID fasilitas yang ingin dihapus. Program akan mencari data berdasarkan ID dan menghapus data tersebut jika ditemukan.**
-
-<img width="476" height="404" alt="image" src="https://github.com/user-attachments/assets/6133ca37-592f-4b3a-9d2a-bb8562a63214" />
-
-<img width="482" height="538" alt="image" src="https://github.com/user-attachments/assets/cdc52858-8406-45de-8f50-bb1ec25e13c4" />
-
-
-**6. Jika Pengguna memilih menu 4 yaitu Update Fasilitas, Pengguna memasukkan ID fasilitas yang ingin diperbarui. Program kemudian meminta data baru dan memperbarui data fasilitas tersebut.**
-
-<img width="486" height="684" alt="image" src="https://github.com/user-attachments/assets/a981399b-9aaf-4f54-aadf-409b5f7585c4" />
-
-<img width="438" height="178" alt="image" src="https://github.com/user-attachments/assets/242824ff-088e-403b-ae78-471992c8b130" />
-
-
-**7. Jika Pengguna memilih menu 5 yaitu Keluar dari Program, program akan berhenti.**
-
-<img width="894" height="478" alt="image" src="https://github.com/user-attachments/assets/8fe29c0c-bb26-42db-acc4-e0952790a1e4" />
-
-
-## Penjelasan Letak Penerapan Nilai Tambah
-Program menerapkan nilai tambah sebagai berikut:
-### 1. Access Modifier
-Access modifier 'private' diterapkan pada atribut class 'Fasilitas' untuk membatasi akses langsung terhadap atribut dari luar class.
-***Letak Penerapan:*** 'models/Fasilitas.java'
-### 2. Encapsulation
-Encapsulation diterapkan dengan menggunakan atribut 'privat' yang diakses melalui method getter dan setter.
-***Letak Penerapan:*** 'models/Fasilitas.java'
-### 3. Validasi Input
-Validasi input diterapkan untuk memastikan data yang dimasukkan pengguna sesuai dengan ketentuan program. Validasi yang digunakan meliputi input tidak boleh kosong, input harus berupa angka, angka tidak boleh negatif, pilihan kondisi harus valid, dan ID fasilitas tidak boleh duplikat.
-***Letak Penerapan:*** 'helper/InputHelper.java' dan 'manager/FasilitasManager.java'
+1. **Tampilkan Fasilitas**
+   Menampilkan seluruh data fasilitas yang tersimpan di dalam `ArrayList`.
+2. **Tambah Fasilitas**
+   Pengguna memasukkan ID, nama, jenis fasilitas, kondisi, dan jumlah fasilitas. Pengguna dapat memilih antara Fasilitas Umum dan Fasilitas Olahraga.
+3. **Hapus Fasilitas**
+   Pengguna memasukkan ID fasilitas. Jika ID ditemukan, data fasilitas akan dihapus dari `ArrayList`.
+4. **Update Fasilitas**
+   Pengguna memasukkan ID fasilitas yang akan diperbarui. Program kemudian meminta nama, kondisi, dan jumlah fasilitas baru.
+5. **Keluar dari Program**
+   Program berhenti dan menampilkan pesan bahwa program telah selesai.
