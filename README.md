@@ -42,3 +42,7 @@ Alur dari setiap menu adalah:
    Pengguna memasukkan ID fasilitas yang akan diperbarui. Program kemudian meminta nama, kondisi, dan jumlah fasilitas baru.
 5. **Keluar dari Program**
    Program berhenti dan menampilkan pesan bahwa program telah selesai.
+
+## 4. Dokumentasi Running Program
+
+### 4.1 Menu Utama
