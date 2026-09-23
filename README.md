@@ -30,3 +30,15 @@ Setelah itu, program menampilkan menu utama:
 
 <img width="564" height="352" alt="image" src="https://github.com/user-attachments/assets/b5e61d53-dc20-44c4-a5e0-b53dc16ea8b5" />
 
+Alur dari setiap menu adalah:
+
+1. **Tampilkan Fasilitas**
+   Menampilkan seluruh data fasilitas yang tersimpan di dalam `ArrayList`.
+2. **Tambah Fasilitas**
+   Pengguna memasukkan ID, nama, jenis fasilitas, kondisi, dan jumlah fasilitas. Pengguna dapat memilih antara Fasilitas Umum dan Fasilitas Olahraga.
+3. **Hapus Fasilitas**
+   Pengguna memasukkan ID fasilitas. Jika ID ditemukan, data fasilitas akan dihapus dari `ArrayList`.
+4. **Update Fasilitas**
+   Pengguna memasukkan ID fasilitas yang akan diperbarui. Program kemudian meminta nama, kondisi, dan jumlah fasilitas baru.
+5. **Keluar dari Program**
+   Program berhenti dan menampilkan pesan bahwa program telah selesai.
