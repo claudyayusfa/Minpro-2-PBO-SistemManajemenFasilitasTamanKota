@@ -229,20 +229,21 @@ Dummy data digunakan agar fitur **Read, Update, dan Delete** dapat langsung diuj
 ## 8. Penerapan Nilai Tambah
 ### 8.1 MVC (Model-View-Controller)
 Program menerapkan nilai tambah berupa struktur **MVC (Model-View-Controller)**.
--**Model**
-Package `models` menyimpan class yang mewakili data dan karakteristik fasilitas. Pada Model juga diterapkann encapsulation, inheritance, constructor, getter, setter, dan validasi atribut.
 
-<img width="368" height="150" alt="image" src="https://github.com/user-attachments/assets/ae45a4ef-a44b-46c0-8e02-66152b615354" />
+- Model
+  Package `models` menyimpan class yang mewakili data dan karakteristik fasilitas. Pada Model juga diterapkann encapsulation, inheritance, constructor, getter, setter, dan validasi atribut.
 
--**View**
-Class `FasilitasView` menangani tampilan dan interaksi dengan pengguna.
+  <img width="368" height="150" alt="image" src="https://github.com/user-attachments/assets/ae45a4ef-a44b-46c0-8e02-66152b615354" />
 
-<img width="356" height="80" alt="image" src="https://github.com/user-attachments/assets/0ce86c82-a98a-44e4-ba9e-453b013b4bf8" />
+- View
+  Class `FasilitasView` menangani tampilan dan interaksi dengan pengguna.
 
--**Controller**
-Class `FasilitasController` mengatur proses pengolahan data.
+  <img width="356" height="80" alt="image" src="https://github.com/user-attachments/assets/0ce86c82-a98a-44e4-ba9e-453b013b4bf8" />
 
-<img width="412" height="70" alt="image" src="https://github.com/user-attachments/assets/246fbc29-9520-4f66-ade3-8f408da378d0" />
+- Controller
+  Class `FasilitasController` mengatur proses pengolahan data.
+
+  <img width="412" height="70" alt="image" src="https://github.com/user-attachments/assets/246fbc29-9520-4f66-ade3-8f408da378d0" />
 
 Dengan penerapan MVC, fungsi program dipisahkan berdasarkan tanggung jawab masing-masing sehingga struktur program menjadi lebih terorganisir.
 
