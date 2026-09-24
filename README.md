@@ -86,7 +86,7 @@ Pengguna juga dapat memilih **2. Fasilitas Olahraga** ketika menambahkan data. D
 <img width="550" height="722" alt="image" src="https://github.com/user-attachments/assets/9e430c1c-8145-4c3d-990b-cc2ccd4a9005" />
 
 ### 4.5 Hasil Setelah Menambahkan Data Fasilitas Baru
-Setelah input data baru **Fasilitas Umum** dan **Fasilitas Olahraga**, dapat ditampilkan pada enu **1. Tampilkan Fasilitas**
+Setelah input data baru **Fasilitas Umum** dan **Fasilitas Olahraga**, dapat ditampilkan pada menu **1. Tampilkan Fasilitas**
 
 <img width="556" height="450" alt="image" src="https://github.com/user-attachments/assets/bdb5a012-53e6-43d8-aaf9-ba8e26545afb" />
 
