@@ -162,4 +162,37 @@ public class Fasilitas {
     private String kondisi;
     private int jumlah;
 ```
+Atribut tersebut diakses dan diubah menggunakan **getter dan setter**.
+```java
+    public int getId() {
+        return id;
+    }
+```
+```java
+    public void setId(int id) {
+        if (id <= 0){
+            throw new IllegalArgumentException("ID harus lebih dari 0!");
+        }
+        this.id = id;
+    }
+```
+Setter digunakan untuk tempat validasi sehingga nilai yang diberikan kepada atribut harus memenuhi ketentuan yang telah ditentukan.
+
+Constructor pada class `Fasilitas` memanggil setter:
+```java
+    public Fasilitas(int id, String nama, String kondisi, int jumlah) {
+        setId(id);
+        setNama(nama);
+        setKondisi(kondisi);
+        setJumlah(jumlah);
+    }
+```
+
+## 6. Penerapan Inheritance
+Program menerapkan **inheritance** dengan menggunakan `Fasilitas` sebagai superclass dan memiliki dua subclass yaitu FasilitasUmum dan FasilitasOlahraga.
+
+Class `Fasilitas` menyimpan atribut yang dimiliki oleh seluruh fasilitas, yaitu ID, nama, kondisi, dan jumlah.
+
+
+
 
