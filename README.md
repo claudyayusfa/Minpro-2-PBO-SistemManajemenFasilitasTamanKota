@@ -193,6 +193,70 @@ Program menerapkan **inheritance** dengan menggunakan `Fasilitas` sebagai superc
 
 Class `Fasilitas` menyimpan atribut yang dimiliki oleh seluruh fasilitas, yaitu ID, nama, kondisi, dan jumlah.
 
+Class `FasilitasUmum` mewarisi class `Fasilitas` menggunakan:
+```java
+public class FasilitasUmum extends Fasilitas{
+    private String jenis;
+```
+Subclass ini memiliki atribut tambahan `jenis`.
 
+Class `FasilitasOlahraga` juga mewarisi class `Fasilitas`:
+```java
+public class FasilitasOlahraga extends Fasilitas{
+    private String jenisOlahraga;
+```
+Subclass ini memiliki atribut tambahan `jenisOlahraga`.
 
+Kedua subclass menggunakan `super()` untuk memanggil cconstructor dari superclass.
 
+Dengan menggunakan inheritance, atribut dan method yang sama tidak perlu ditulis ulang pada setiap subclass.
+
+## 7. Dummy Data
+Program menyediakan dummy data awal pada constructor `FasilitasController`.
+```java
+        this.view = view;
+        this.daftarFasilitas = new ArrayList<>();
+        
+        daftarFasilitas.add(
+                new FasilitasUmum(1, "Gazebo", "Baik", 4, "Tempat Istirahat")      
+        );
+        daftarFasilitas.add(
+                new FasilitasOlahraga(2, "Lapangan Basket", "Baik", 1, "Basket")
+        );
+```
+Dummy data digunakan agar fitur **Read, Update, dan Delete** dapat langsung diuji tanpa harus melakukan Create terlebih dahulu.
+
+## 8. Penerapan Nilai Tambah
+### 8.1 MVC (Model-View-Controller)
+Program menerapkan nilai tambah berupa struktur **MVC (Model-View-Controller)**.
+-**Model**
+Package `models` menyimpan class yang mewakili data dan karakteristik fasilitas. Pada Model juga diterapkann encapsulation, inheritance, constructor, getter, setter, dan validasi atribut.
+
+<img width="368" height="150" alt="image" src="https://github.com/user-attachments/assets/ae45a4ef-a44b-46c0-8e02-66152b615354" />
+
+-**View**
+Class `FasilitasView` menangani tampilan dan interaksi dengan pengguna.
+
+<img width="356" height="80" alt="image" src="https://github.com/user-attachments/assets/0ce86c82-a98a-44e4-ba9e-453b013b4bf8" />
+
+-**Controller**
+Class `FasilitasController` mengatur proses pengolahan data.
+
+<img width="412" height="70" alt="image" src="https://github.com/user-attachments/assets/246fbc29-9520-4f66-ade3-8f408da378d0" />
+
+Dengan penerapan MVC, fungsi program dipisahkan berdasarkan tanggung jawab masing-masing sehingga struktur program menjadi lebih terorganisir.
+
+### 8.2 Polymorphism (Method Overriding)
+Program menerapkan **polymorphism** melalui **method overriding** pada method `tampilkanInfo()`.
+
+Pada superclass `Fasilitas` terdapat:
+
+<img width="770" height="238" alt="image" src="https://github.com/user-attachments/assets/f25092ae-32fe-4477-9c0e-338c45a368e2" />
+
+Kemudian method tersebut di-override pada `FasilitasUmum`:
+
+<img width="748" height="202" alt="image" src="https://github.com/user-attachments/assets/e81b4402-2056-4c24-bc54-3537c9bccda2" />
+
+dan pada `FasilitasOlahraga`:
+
+<img width="860" height="194" alt="image" src="https://github.com/user-attachments/assets/48e5e13f-9fa6-4768-b4d9-a527aecce8e3" />
