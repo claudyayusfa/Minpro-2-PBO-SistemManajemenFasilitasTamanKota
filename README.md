@@ -122,17 +122,44 @@ Setelah data diperbarui, pada menu tampilkan data fasilitas, data yang diperbaru
 Program menerapkan validasi input untuk mencegah pengguna memasukkan data yang tidak sesuai.
 Beberapa validasi yang diterapkan antara lain:
 - ID harus lebih dari 0.
-  ```java
-      public int inputId(){
-        while (true){
-            int id = InputHelper.inputInteger("ID Fasilitas: ");
-            
-            if (id > 0){
-                return id;
-            }
-            System.out.println("ID harus lebih dari 0!");
-        }
-    }
-  ```
+
+  <img width="544" height="78" alt="image" src="https://github.com/user-attachments/assets/78a65a0b-d690-447f-8173-f56417f5c6f5" />
+
+- ID fasilitas tidak boleh sama dengan ID yang sudah digunakan.
+
+<img width="536" height="76" alt="image" src="https://github.com/user-attachments/assets/0a3f3343-6424-4e4a-92c4-b9437260ade1" />
   
+- Input String tidak boleh kosong.
+
+<img width="536" height="74" alt="image" src="https://github.com/user-attachments/assets/e6729c42-1867-4a6c-8c41-715d3f726b63" />
+
+- Input angka tidak boleh berupa huruf.
+
+<img width="538" height="86" alt="image" src="https://github.com/user-attachments/assets/2c924d80-4141-4a8f-8d7d-f0011f425dcf" />
+
+- Angka tidak boleh negatif.
+
+<img width="534" height="68" alt="image" src="https://github.com/user-attachments/assets/04545a3d-0d57-42bd-ac11-9cf44ed81ba5" />
+
+- Kondisi fasilitas hanya dapat dipilih antara Baik, Cukup, dan Rusak.
+
+<img width="508" height="274" alt="image" src="https://github.com/user-attachments/assets/d3d0c345-74c8-42bb-b19e-8859e139bab9" />
+
+---
+
+### 4.7 Keluar dari Program
+Ketika pengguna memilih menu **5**, perulangan program berhenti dan sistem menampilkan pesan:
+
+<img width="696" height="84" alt="image" src="https://github.com/user-attachments/assets/c0cd45ad-161e-4100-8dea-42dfe860dce5" />
+
+## 5. Penerapan Encapsulation
+Konsep **encapsulation** diterapkan dengan membuat atribut pada class menggunakan access modifier `private`.
+Contoh pada class `Fasilitas`:
+```java
+public class Fasilitas {
+    private int id;
+    private String nama;
+    private String kondisi;
+    private int jumlah;
+```
 
