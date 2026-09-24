@@ -220,7 +220,7 @@ Program menerapkan nilai tambah berupa struktur **MVC (Model-View-Controller)**.
 Dengan penerapan MVC, fungsi program dipisahkan berdasarkan tanggung jawab masing-masing sehingga struktur program menjadi lebih terorganisir.
 
 ### 8.2 Polymorphism (Method Overriding)
-Program menerapkan **polymorphism** melalui **method overriding** pada method `tampilkanInfo()`.
+Program menerapkan **polymorphism** melalui **method overriding** pada method `tampilkanInfo()`. Method tersebut terdapat pada superclass `Fasilitas`, kemudian di-override oleh subclass `FasilitasUmum` dan `FasilitasOlahraaga`.
 
 - Pada superclass `Fasilitas` terdapat:
 
