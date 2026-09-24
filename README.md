@@ -127,23 +127,23 @@ Beberapa validasi yang diterapkan antara lain:
 
 - ID fasilitas tidak boleh sama dengan ID yang sudah digunakan.
 
-<img width="536" height="76" alt="image" src="https://github.com/user-attachments/assets/0a3f3343-6424-4e4a-92c4-b9437260ade1" />
+  <img width="536" height="76" alt="image" src="https://github.com/user-attachments/assets/0a3f3343-6424-4e4a-92c4-b9437260ade1" />
   
 - Input String tidak boleh kosong.
 
-<img width="536" height="74" alt="image" src="https://github.com/user-attachments/assets/e6729c42-1867-4a6c-8c41-715d3f726b63" />
+  <img width="536" height="74" alt="image" src="https://github.com/user-attachments/assets/e6729c42-1867-4a6c-8c41-715d3f726b63" />
 
 - Input angka tidak boleh berupa huruf.
 
-<img width="538" height="86" alt="image" src="https://github.com/user-attachments/assets/2c924d80-4141-4a8f-8d7d-f0011f425dcf" />
+  <img width="538" height="86" alt="image" src="https://github.com/user-attachments/assets/2c924d80-4141-4a8f-8d7d-f0011f425dcf" />
 
 - Angka tidak boleh negatif.
 
-<img width="534" height="68" alt="image" src="https://github.com/user-attachments/assets/04545a3d-0d57-42bd-ac11-9cf44ed81ba5" />
+  <img width="534" height="68" alt="image" src="https://github.com/user-attachments/assets/04545a3d-0d57-42bd-ac11-9cf44ed81ba5" />
 
 - Kondisi fasilitas hanya dapat dipilih antara Baik, Cukup, dan Rusak.
 
-<img width="508" height="274" alt="image" src="https://github.com/user-attachments/assets/d3d0c345-74c8-42bb-b19e-8859e139bab9" />
+  <img width="508" height="274" alt="image" src="https://github.com/user-attachments/assets/d3d0c345-74c8-42bb-b19e-8859e139bab9" />
 
 ---
 
