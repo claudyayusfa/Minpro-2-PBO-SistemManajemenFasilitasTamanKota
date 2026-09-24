@@ -205,17 +205,17 @@ Program menerapkan nilai tambah berupa struktur **MVC (Model-View-Controller)**.
 - Model
   Package `models` menyimpan class yang mewakili data dan karakteristik fasilitas. Pada Model juga diterapkann encapsulation, inheritance, constructor, getter, setter, dan validasi atribut.
 
-  <img width="800" height="150" alt="image" src="https://github.com/user-attachments/assets/ae45a4ef-a44b-46c0-8e02-66152b615354" />
+  <img width="500" height="150" alt="image" src="https://github.com/user-attachments/assets/ae45a4ef-a44b-46c0-8e02-66152b615354" />
 
 - View
   Class `FasilitasView` menangani tampilan dan interaksi dengan pengguna.
 
-  <img width="800" height="80" alt="image" src="https://github.com/user-attachments/assets/0ce86c82-a98a-44e4-ba9e-453b013b4bf8" />
+  <img width="500" height="80" alt="image" src="https://github.com/user-attachments/assets/0ce86c82-a98a-44e4-ba9e-453b013b4bf8" />
 
 - Controller
   Class `FasilitasController` mengatur proses pengolahan data.
 
-  <img width="800" height="70" alt="image" src="https://github.com/user-attachments/assets/246fbc29-9520-4f66-ade3-8f408da378d0" />
+  <img width="500" height="70" alt="image" src="https://github.com/user-attachments/assets/246fbc29-9520-4f66-ade3-8f408da378d0" />
 
 Dengan penerapan MVC, fungsi program dipisahkan berdasarkan tanggung jawab masing-masing sehingga struktur program menjadi lebih terorganisir.
 
