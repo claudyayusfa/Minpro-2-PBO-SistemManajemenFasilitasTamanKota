@@ -102,7 +102,7 @@ Setelah menghapus ID fasilitas, maka di menu tampilkan data fasilitas akan terha
 
 <img width="548" height="800" alt="image" src="https://github.com/user-attachments/assets/48af25c3-d24d-4e6f-8894-5990a5376d8b" />
 
-### 4.5 Update Data Fasilitas (Update)
+### 4.7 Update Data Fasilitas (Update)
 Pada menu **4. Update Fasilitas**, penguna memasukkan ID fasilitas yang ingin diperbarui datanya.
 Jik ID ditemukan, pengguna dapat memperbarui:
 - Nama Fasilitas
@@ -118,7 +118,7 @@ Setelah data diperbarui, pada menu tampilkan data fasilitas, data yang diperbaru
 
 <img width="570" height="216" alt="image" src="https://github.com/user-attachments/assets/652e9c2f-f209-4c8a-9ae1-58e61ce75465" />
 
-### 4.6 Validasi Input
+### 4.8 Validasi Input
 Program menerapkan validasi input untuk mencegah pengguna memasukkan data yang tidak sesuai.
 Beberapa validasi yang diterapkan antara lain:
 - ID harus lebih dari 0.
@@ -147,7 +147,7 @@ Beberapa validasi yang diterapkan antara lain:
 
 ---
 
-### 4.7 Keluar dari Program
+### 4.9 Keluar dari Program
 Ketika pengguna memilih menu **5**, perulangan program berhenti dan sistem menampilkan pesan:
 
 <img width="696" height="84" alt="image" src="https://github.com/user-attachments/assets/c0cd45ad-161e-4100-8dea-42dfe860dce5" />
