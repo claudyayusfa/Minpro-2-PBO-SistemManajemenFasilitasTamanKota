@@ -26,7 +26,7 @@ Penjelasan masing-masing package, yaitu:
 - **`helper`** berisi `InputHelper` yang membantu proses input dan validasi input.
 - **`main`** berisi `Main` sebagai entry point untuk menjalankan program.
 
-## 3. Penjelasan Alur Program ✏️
+## 3. Penjelasan Alur Program 🛝
 
 Ketika program dijalankan, class 'Main' membuat objek `FasilitasView` dan `FasilitasController`. Pada saat `FasilitasController` dibuat, program secara otomatis memasukkan dummy data ke dalam `ArrayList`.
 
@@ -93,4 +93,46 @@ Setelah input data baru **Fasilitas Umum** dan **Fasilitas Olahraga**, dapat dit
 ---
 
 ### 4.6 Hapus Data Fasilitas (Delete)
-Pada menu 
+Pada menu **3. Hapus Fasilitas**, pengguna memasukkan ID fasilitas yang ingin dihapus. 
+Program akan mencari fasilitas berdasarkan ID. Jika fasilitas ditemukan, data tersebut akan dihapus dari `ArrayList`.
+
+<img width="554" height="512" alt="image" src="https://github.com/user-attachments/assets/7dc5aaaf-a7c5-4103-af91-737a3f1b5594" />
+
+Setelah menghapus ID fasilitas, maka di menu tampilkan data fasilitas akan terhapus juga.
+
+<img width="548" height="800" alt="image" src="https://github.com/user-attachments/assets/48af25c3-d24d-4e6f-8894-5990a5376d8b" />
+
+### 4.5 Update Data Fasilitas (Update)
+Pada menu **4. Update Fasilitas**, penguna memasukkan ID fasilitas yang ingin diperbarui datanya.
+Jik ID ditemukan, pengguna dapat memperbarui:
+- Nama Fasilitas
+- Kondisi Fasilitas
+- Jumlah Fasilitas
+Setelah proses selesai, program menampilkan pesan
+```text
+Fasilitas berhasil diperbarui!
+```
+<img width="562" height="540" alt="image" src="https://github.com/user-attachments/assets/25ee1fce-eaca-4586-8cf5-734706f097e2" />
+
+Setelah data diperbarui, pada menu tampilkan data fasilitas, data yang diperbarui berhasil diubah.
+
+<img width="570" height="216" alt="image" src="https://github.com/user-attachments/assets/652e9c2f-f209-4c8a-9ae1-58e61ce75465" />
+
+### 4.6 Validasi Input
+Program menerapkan validasi input untuk mencegah pengguna memasukkan data yang tidak sesuai.
+Beberapa validasi yang diterapkan antara lain:
+- ID harus lebih dari 0.
+  ```java
+      public int inputId(){
+        while (true){
+            int id = InputHelper.inputInteger("ID Fasilitas: ");
+            
+            if (id > 0){
+                return id;
+            }
+            System.out.println("ID harus lebih dari 0!");
+        }
+    }
+  ```
+  
+
