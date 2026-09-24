@@ -50,3 +50,47 @@ Alur dari setiap menu adalah:
 ## 4. Dokumentasi Running Program ⚡︎
 
 ### 4.1 Menu Utama
+Ketika program pertama kali dijalankan, sistem manampilkan lima pilihan menu yang dapat dipilih oleh pengguna.
+
+<img width="562" height="354" alt="image" src="https://github.com/user-attachments/assets/9731928b-5cab-484d-9514-01dfae4319b0" />
+
+---
+
+### 4.2 Menampilkan Data Fasilitas (Read)
+Pada menu **1. Tampilkan Fasilitas**, program menampilkan seluruh data fasilitas yang tersimpan di dalam `ArrayList`.
+Program telah memiliki dummy data awal berupa **Gazebo** sebagai Fasilitas Umum dan **Lapangan Basket** sebagai Fasilitas  Olaharaga. Oleh karena itu, data dapat langsung ditampilkan tanpa melakukan penambahan data terlebih dahulu.
+
+<img width="550" height="668" alt="image" src="https://github.com/user-attachments/assets/1005a347-e2b8-454e-aa5e-64a8ba702ce4" />
+
+---
+
+### 4.3 Menambahkan Data Fasilitas Umum (Create)
+Pada menu **2. Tambah Fasilitas**, pengguna dapat menambahkan fasilitas baru. Untuk Fasilitas Umum, pengguna memasukkan:
+
+- ID Fasilitas
+- Nama Fasilitas
+- Memilih `1. Fasilitas Umum`
+- Kondisi Fasilitas
+- Jumlah Fasilitas
+- Jenis Fasilitas Umum
+  
+Data kemudian disimpan sebagai objek `FasilitasUmum` ke dalam `ArrayList`.
+
+<img width="550" height="726" alt="image" src="https://github.com/user-attachments/assets/18cd3e32-9197-4003-884f-7d4a5bdff8c7" />
+
+---
+
+### 4.4 Menambahkan Data Fasilitas Olahraga (Create)
+Pengguna juga dapat memilih **2. Fasilitas Olahraga** ketika menambahkan data. Data yang dimasukkan akan dibuat menjadi objek `FasilitasOlahraga` dan memiliki informasi tambahan seperti jenis olahraga.
+
+<img width="550" height="722" alt="image" src="https://github.com/user-attachments/assets/9e430c1c-8145-4c3d-990b-cc2ccd4a9005" />
+
+### 4.5 Hasil Setelah Menambahkan Data Fasilitas Baru
+Setelah input data baru **Fasilitas Umum** dan **Fasilitas Olahraga**, dapat ditampilkan pada enu **1. Tampilkan Fasilitas**
+
+<img width="556" height="450" alt="image" src="https://github.com/user-attachments/assets/bdb5a012-53e6-43d8-aaf9-ba8e26545afb" />
+
+---
+
+### 4.6 Hapus Data Fasilitas (Delete)
+Pada menu 
