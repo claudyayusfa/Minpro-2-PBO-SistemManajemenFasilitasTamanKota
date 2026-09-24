@@ -153,59 +153,39 @@ Ketika pengguna memilih menu **5**, perulangan program berhenti dan sistem menam
 <img width="696" height="84" alt="image" src="https://github.com/user-attachments/assets/c0cd45ad-161e-4100-8dea-42dfe860dce5" />
 
 ## 5. Penerapan Encapsulation
-Konsep **encapsulation** diterapkan dengan membuat atribut pada class menggunakan access modifier `private`.
-Contoh pada class `Fasilitas`:
-```java
-public class Fasilitas {
-    private int id;
-    private String nama;
-    private String kondisi;
-    private int jumlah;
-```
-Atribut tersebut diakses dan diubah menggunakan **getter dan setter**.
-```java
-    public int getId() {
-        return id;
-    }
-```
-```java
-    public void setId(int id) {
-        if (id <= 0){
-            throw new IllegalArgumentException("ID harus lebih dari 0!");
-        }
-        this.id = id;
-    }
-```
-Setter digunakan untuk tempat validasi sehingga nilai yang diberikan kepada atribut harus memenuhi ketentuan yang telah ditentukan.
+- Konsep **encapsulation** diterapkan dengan membuat atribut pada class menggunakan access modifier `private`.
+  Contoh pada class `Fasilitas`:
 
-Constructor pada class `Fasilitas` memanggil setter:
-```java
-    public Fasilitas(int id, String nama, String kondisi, int jumlah) {
-        setId(id);
-        setNama(nama);
-        setKondisi(kondisi);
-        setJumlah(jumlah);
-    }
-```
+  <img width="480" height="190" alt="image" src="https://github.com/user-attachments/assets/78ff5c49-de62-4431-a659-344303d8b91e" />
+
+- Atribut tersebut diakses dan diubah menggunakan **getter dan setter**.
+
+  <img width="354" height="150" alt="image" src="https://github.com/user-attachments/assets/e7eba1c9-f746-4553-b38f-8c20f7b3f08f" />
+
+  <img width="1124" height="228" alt="image" src="https://github.com/user-attachments/assets/63b8a623-e057-4d46-ac49-317b5199ef11" />
+
+  Setter digunakan untuk tempat validasi sehingga nilai yang diberikan kepada atribut harus memenuhi ketentuan yang telah ditentukan.
+
+- Constructor pada class `Fasilitas` memanggil setter:
+  
+  <img width="1100" height="222" alt="image" src="https://github.com/user-attachments/assets/42b38aa0-7a2a-4ebd-9e70-bacf2b20b36e" />
 
 ## 6. Penerapan Inheritance
 Program menerapkan **inheritance** dengan menggunakan `Fasilitas` sebagai superclass dan memiliki dua subclass yaitu FasilitasUmum dan FasilitasOlahraga.
 
 Class `Fasilitas` menyimpan atribut yang dimiliki oleh seluruh fasilitas, yaitu ID, nama, kondisi, dan jumlah.
 
-Class `FasilitasUmum` mewarisi class `Fasilitas` menggunakan:
-```java
-public class FasilitasUmum extends Fasilitas{
-    private String jenis;
-```
-Subclass ini memiliki atribut tambahan `jenis`.
+- Class `FasilitasUmum` mewarisi class `Fasilitas` menggunakan:
+  
+  <img width="748" height="78" alt="image" src="https://github.com/user-attachments/assets/b64f53c5-ee90-4779-8c1c-e58ae1632e63" />
 
-Class `FasilitasOlahraga` juga mewarisi class `Fasilitas`:
-```java
-public class FasilitasOlahraga extends Fasilitas{
-    private String jenisOlahraga;
-```
-Subclass ini memiliki atribut tambahan `jenisOlahraga`.
+  Subclass ini memiliki atribut tambahan `jenis`.
+
+- Class `FasilitasOlahraga` juga mewarisi class `Fasilitas`:
+  
+  <img width="820" height="78" alt="image" src="https://github.com/user-attachments/assets/ed54a096-02fb-4e34-826f-bafaf4b8292a" />
+
+  Subclass ini memiliki atribut tambahan `jenisOlahraga`.
 
 Kedua subclass menggunakan `super()` untuk memanggil cconstructor dari superclass.
 
@@ -213,17 +193,9 @@ Dengan menggunakan inheritance, atribut dan method yang sama tidak perlu ditulis
 
 ## 7. Dummy Data
 Program menyediakan dummy data awal pada constructor `FasilitasController`.
-```java
-        this.view = view;
-        this.daftarFasilitas = new ArrayList<>();
-        
-        daftarFasilitas.add(
-                new FasilitasUmum(1, "Gazebo", "Baik", 4, "Tempat Istirahat")      
-        );
-        daftarFasilitas.add(
-                new FasilitasOlahraga(2, "Lapangan Basket", "Baik", 1, "Basket")
-        );
-```
+
+<img width="1240" height="432" alt="image" src="https://github.com/user-attachments/assets/c4309d5c-04f4-4d46-a409-ac99ee1ec48e" />
+
 Dummy data digunakan agar fitur **Read, Update, dan Delete** dapat langsung diuji tanpa harus melakukan Create terlebih dahulu.
 
 ## 8. Penerapan Nilai Tambah
@@ -250,14 +222,14 @@ Dengan penerapan MVC, fungsi program dipisahkan berdasarkan tanggung jawab masin
 ### 8.2 Polymorphism (Method Overriding)
 Program menerapkan **polymorphism** melalui **method overriding** pada method `tampilkanInfo()`.
 
-Pada superclass `Fasilitas` terdapat:
+- Pada superclass `Fasilitas` terdapat:
 
-<img width="770" height="238" alt="image" src="https://github.com/user-attachments/assets/f25092ae-32fe-4477-9c0e-338c45a368e2" />
+  <img width="770" height="238" alt="image" src="https://github.com/user-attachments/assets/f25092ae-32fe-4477-9c0e-338c45a368e2" />
 
-Kemudian method tersebut di-override pada `FasilitasUmum`:
+- Kemudian method tersebut di-override pada `FasilitasUmum`:
 
-<img width="748" height="202" alt="image" src="https://github.com/user-attachments/assets/e81b4402-2056-4c24-bc54-3537c9bccda2" />
+  <img width="748" height="202" alt="image" src="https://github.com/user-attachments/assets/e81b4402-2056-4c24-bc54-3537c9bccda2" />
 
-dan pada `FasilitasOlahraga`:
+- dan pada `FasilitasOlahraga`:
 
-<img width="860" height="194" alt="image" src="https://github.com/user-attachments/assets/48e5e13f-9fa6-4768-b4d9-a527aecce8e3" />
+  <img width="860" height="194" alt="image" src="https://github.com/user-attachments/assets/48e5e13f-9fa6-4768-b4d9-a527aecce8e3" />
